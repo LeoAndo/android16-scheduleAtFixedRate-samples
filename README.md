@@ -14,15 +14,18 @@
 `scheduleAtFixedRate` is deprecated.<br>
 
 # set PATH
+```
 export PATH=$PATH:/Users/$USER/Library/Android/sdk/platform-tools
-
+```
 # app compatibility settings
+```
 adb shell am compat enable STPE_SKIP_MULTIPLE_MISSED_PERIODIC_TASKS com.example.javasample
 adb shell am compat disable STPE_SKIP_MULTIPLE_MISSED_PERIODIC_TASKS com.example.javasample
-
+```
 # reset app compatibility settings
+```
 adb shell am compat reset STPE_SKIP_MULTIPLE_MISSED_PERIODIC_TASKS com.example.javasample
-
+```
 # refs
 https://developer.android.com/about/versions/16/overview<br>
 https://android-developers.googleblog.com/2025/01/first-beta-android16.html<br>
