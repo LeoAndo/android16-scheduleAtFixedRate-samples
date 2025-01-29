@@ -32,14 +32,16 @@ public class MainActivity extends AppCompatActivity {
         });
 
         // deprecated pattern - START
-//        Runnable beeper = () -> Log.d(TAG, "beep");
-//        // 初期遅延3秒、その後5秒間隔で実行する
-//        var beeperHandle = scheduler.scheduleAtFixedRate(beeper, 3, 5, TimeUnit.SECONDS);
-//        Runnable canceller = () -> {
-//            Log.d(TAG, "cancel!");
-//            beeperHandle.cancel(false);
-//        };
-//        scheduler.schedule(canceller, 20, TimeUnit.SECONDS); // 30秒で定期実行を終了する
+        /*
+        Runnable beeper = () -> Log.d(TAG, "beep");
+        // 初期遅延3秒、その後5秒間隔で実行する
+        var beeperHandle = scheduler.scheduleAtFixedRate(beeper, 3, 5, TimeUnit.SECONDS);
+        Runnable canceller = () -> {
+            Log.d(TAG, "cancel!");
+            beeperHandle.cancel(false);
+        };
+        scheduler.schedule(canceller, 20, TimeUnit.SECONDS); // 30秒で定期実行を終了する
+         */
         // deprecated pattern - END
 
         // new pattern - START
