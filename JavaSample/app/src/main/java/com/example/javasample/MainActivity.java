@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
             Log.d(TAG, "cancel!");
             beeperHandle.cancel(false);
         };
-        scheduler.schedule(canceller, 20, TimeUnit.SECONDS); // 30秒で定期実行を終了する
+        scheduler.schedule(canceller, 20, TimeUnit.SECONDS); // 20秒で定期実行を終了する
         // new pattern - END
 
     }
